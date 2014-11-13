@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>MiPrimerServlet</servlet-name>
+        <servlet-class>Class3.servlets.MiPrimerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Segundo</servlet-name>
+        <servlet-class>Class3.servlets.MiSegundoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MiPrimerServlet</servlet-name>
+        <url-pattern>/MiPrimerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Segundo</servlet-name>
+        <url-pattern>/TutorialesHackro</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
